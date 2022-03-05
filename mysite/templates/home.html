@@ -13,9 +13,23 @@
 
 <body>
 
-    <h1>HEROES</h1>
-    <ul id="hero-display"></ul>
-    <button>+</button>
+    <center><h1 class="title is-1">CHOOSE YOUR HERO</h1></center>
+
+    <div class="columns is-multiline" id="hero-display">    
+    </div>
+
+    <!-- ul method -->
+    <!-- <ul id="hero-display"></ul> -->
+    <button onclick="toggleHeroForm()" id="heroform-display">+</button>
+    <form id="heroform" style="display: none" enctype="multipart/form-data">Stuff here, y'all.<br>
+        <label for="name">Hero name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="alias">Hero alias:</label>
+        <input type="text" id="alias" name="alias"><br>
+        <label for="portrait">Hero portrait:</label>
+        <input type="file" id="portrait" name="portrait"><br>
+        <input type="submit" value="Submit"><br>
+    </form>
 
 </body>
 
